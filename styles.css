@@ -1,6 +1,126 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+/* <!-- -----NAV------ --> */
+
+nav {
+  padding: 20px 100px;
+  background-color: #fff;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+}
+
+.nav-links ul li {
+  display: inline;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-links ul li a:hover {
+  color: #e67e22;
+}
+
+.nav-links button a {
+  text-decoration: none;
+  color: #e67e22;
+}
+
+.nav-links button {
+  background: none;
+  border: #e67e22 solid 1px;
+  border-radius: 0.5rem;
+  padding: 10px 15px;
+  margin-left: 20px;
+}
+
+.nav-links button a:hover {
+  background: #e67e22;
+  color: #fff;
+}
+
+.nav-links button:hover {
+  background: #e67e22;
+}
+
+.logo {
+  width: 4rem;
+}
+
+/* <!-- -----LANDING PAGE----- --> */
+
+#landing-page {
+  padding: 100px;
+  background-image: url(assets/homepage/frame-152.png);
+  background-repeat: no-repeat;
+  min-height: 50dvh;
+  display: flex;
+  align-items: center;
+}
+
+#landing-page h1 {
+  line-height: 50px;
+  font-family: "Lora", serif;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+#landing-page p {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-family: "Lato", sans-serif;
+  color: #fff;
+}
+
+#landing-page button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#landing-page button {
+  background: #e67e22;
+  border: #e67e22 solid 1px;
+  border-radius: 0.5rem;
+  padding: 10px 15px;
+}
+
+/* <!-- LANDING PAGE AD --> */
+
+.lp-ad {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  background-color: #1f4788;
+  color: #fff;
+  padding: 20px;
+}
+
+.lp-ad p span {
+  font-family: "Lora", serif;
+}
+
+.lp-ad button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.lp-ad button {
+  background: #e67e22;
+  border: #e67e22 solid 1px;
+  border-radius: 0.5rem;
+  padding: 10px 15px;
 }
