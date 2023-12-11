@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --colors-charcoal-gray: #333333;
+    --colors-accent-orange: #E67E22;
+    --colors-darker-blue: #1F4788;
+    --colors-soft-orange: #F39C12;
+    --colors-light-blue: rgba(52, 152, 219, 0.10);
+    --colors-white: #ffffff;
+    --colors-light-light-blue: rgba(127, 179, 213, 0.20);
+    --colors-more-light-blue:  #7FB3D5;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header section  */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+.nav-menu{
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-menu a {
+    color: var(--colors-charcoal-gray);
+    text-decoration: none;
+}
+
+.nav-button {
+    padding: 1rem 1.5rem;
+    color: var(--colors-accent-orange);
+    background-color: transparent;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border-color: var(--colors-accent-orange);
+    font-weight: 600;
+}
+
+/* our services section */
+ h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--colors-darker-blue);
+    position: relative;
+    font-family: "Lora", sans-serif;
+}
+
+h1::after {
+    content: "";
+    border: 3px solid black;
+    width: 5%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-color: var(--colors-accent-orange);
+    font-family: "Lora", sans-serif;
+}
+
+.first-section {
+    padding: 2rem 5%;
+}
+
+.first-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    font-family: "Lora", sans-serif;
+    margin-bottom: 3rem;
+    margin-top: 1.5rem;
+}
+
+.first-flex > div >  h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--colors-darker-blue);
+    font-family: "Lora", sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+.image-container {
+    width: 50%;
+}
+
+.image-container > img {
+    width: 100%;
+}
+
+.content-container {
+    width: 50%;
+}
+.section-details {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--colors-charcoal-gray);
+    font-family: "Lato", sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+.section-pricing {
+    font-size: 1.5rem;
+    color: var(--colors-soft-orange);
+    font-family: "Lato", sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+.second-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9.38rem;
+    padding: 2rem 5%;
+    background-color: var(--colors-light-blue);
+}
+
+.image-man {
+    width: 50%;
+}
+
+.second-content {
+    width: 50%;
+}
+
+.second-content > h2 {
+    font-family: "Lora", sans-serif;
+    font-size: 2.5rem;
+    color: var(--colors-darker-blue);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.second-content > p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+.second-section-button {
+    padding: 1rem 1.5rem;
+    color: var(--colors-accent-orange);
+    background-color: transparent;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border-color: var(--colors-accent-orange);
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+}
+
+.third-section {
+    padding: 2rem 5%;
+}
+.third-section > h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--colors-darker-blue);
+    position: relative;
+    font-family: "Lora", sans-serif;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.third-section > h3::after {
+    content: "";
+    border: 3px solid black;
+    width: 5%;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-color: var(--colors-accent-orange);
+    font-family: "Lora", sans-serif;
+    background: url(image/bubbleup-image.png);
+}
+
+.accord {
+    font-family: "Lora", sans-serif;
+}
+.accordion {
+    width: min(90vw, 70%);
+    margin: 0 auto;
+    /* position: absolute;
+    top: 100%;
+    left: 20%;
+    transform: translate(-50%, -50%); */
+}
+
+input[type="checkbox"] {
+    display: none;
+    appearance: none;
+}
+
+.accordion-item {
+    padding: 2em;
+    background-color: #ffffff;
+    border-radius: 0.5em;
+    border: 2px solid #7FB3D5;
+}
+
+.accordion-item:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+.accordions {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.accordion-content {
+    color: #606060;
+    font-size: 0.8em;
+    line-height: 1.8em;
+}
+
+label {
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    color: #000000;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 1em 0;
+}
+
+input[type="checkbox"] ~ label .arrow {
+    display: inline-block;
+    transition: 1s;
+}
+
+input[type="checkbox"]:checked ~ label .arrow {
+    transform: rotate(90deg);
+}
+
+input[type="checkbox"]:checked ~ label .arrow {
+    color: #0083e9;
+}
+
+input[type="checkbox"]:checked ~  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+
+input[type="checkbox"] ~  .accordion-content {
+    max-height: 100vh;
+    transition: 1s;
+}
+
+footer {
+    padding: 3rem 5%;
+    background-color: var(--colors-darker-blue);
+    margin-top: 1.5rem;
+    font-family: "Lato", sans-serif;
+    width: 100%;
+}
+
+.footer1 {
+    display: flex;
+    justify-content: space-between;
+    color: var(--colors-white);
+    font-weight: 400;
+}
+
+.all-footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+}
+
+.location-footer {
+    display: flex;
+    gap: 1rem;
+}
+
+.all-footer:last-child {
+    display: flex;
+    flex-direction: column;
+}
+.email-footer {
+    padding: 0.6rem 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--colors-light-light-blue);
+    color: var(--colors-more-light-blue);
+    border-radius: 5px;
+    font-size: 0.7rem;
+}
+
+.footer-second-section {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1rem;
+    margin-left: 1rem;
+}
+
+hr {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+footer > p {
+    color: var(--colors-white);
+    font-size: 0.87rem;
+    margin-left: 1rem;
+}
